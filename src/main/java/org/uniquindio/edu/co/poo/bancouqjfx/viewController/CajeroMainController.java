@@ -17,7 +17,7 @@ public class CajeroMainController {
 
     public void setApp(App app) {
         this.app = app;
-        cargarRegistrarCliente();
+//        cargarRegistrarCliente();
     }
 
     private void cargarRegistrarCliente() {
@@ -37,9 +37,8 @@ public class CajeroMainController {
     }
 
     @FXML
-    public void abrirCrudCliente() {
-        cargarRegistrarCliente();
-    }
+    public void abrirCrudCliente() {cargarRegistrarCliente();}
+
 
     @FXML
     public void abrirTransacciones() {

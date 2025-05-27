@@ -5,6 +5,9 @@ import java.util.*;
 import org.uniquindio.edu.co.poo.bancouqjfx.model.GestorTransacciones;
 import org.uniquindio.edu.co.poo.bancouqjfx.model.GestorTransacciones.Transaccion;
 
+// Codificación realizada por: Nicolás Ramirez Celis, Samuel Cruz Pabón, Nicolás Monsalve Aguirre :)
+
+
 public class Banco {
     public String nombre;
     public Collection<Cliente> clientes;
