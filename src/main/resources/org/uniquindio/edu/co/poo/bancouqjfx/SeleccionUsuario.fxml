@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.uniquindio.edu.co.poo.bancouqjfx.viewController.SeleccionUsuarioController"
+            prefWidth="400" prefHeight="300">
+
+    <children>
+        <Label layoutX="140" layoutY="20" text="Iniciar Sesión" style="-fx-font-size: 20px;"/>
+
+        <Label layoutX="40" layoutY="70" text="Tipo de Usuario:"/>
+        <ComboBox fx:id="comboTipoUsuario" layoutX="150" layoutY="65" prefWidth="200"/>
+
+        <Label layoutX="40" layoutY="110" text="Correo:"/>
+        <TextField fx:id="txtCorreo" layoutX="150" layoutY="105" prefWidth="200"/>
+
+        <Label layoutX="40" layoutY="150" text="Contraseña:"/>
+        <PasswordField fx:id="txtContrasena" layoutX="150" layoutY="145" prefWidth="200"/>
+
+        <Button fx:id="btnIngresar" layoutX="150" layoutY="190" text="Ingresar" onAction="#ingresar" prefWidth="90"/>
+        <Button fx:id="btnRegistrar" layoutX="260" layoutY="190" text="Registrarse" onAction="#registrar" prefWidth="90"/>
+
+    </children>
+
+</AnchorPane>

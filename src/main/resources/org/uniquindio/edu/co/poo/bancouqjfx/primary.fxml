@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="200.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.uniquindio.edu.co.poo.bancouqjfx.viewController.PrimaryController">
+
+    <Button fx:id="btnClientes" layoutX="28.0" layoutY="87.0" onAction="#onOpenCrudClientes" text="Registrar Cliente" textFill="#0b0b0b" />
+    <Button fx:id="btnTransacciones" layoutX="46.0" layoutY="131.0" onAction="#onOpenTransacciones" text="Transferir" />
+    <Button fx:id="btnCuenta" layoutX="185.0" layoutY="87.0" onAction="#onOpenCuenta" text="Agregar Cuenta" />
+    <Button fx:id="btnEmpleados" layoutX="171.0" layoutY="131.0" onAction="#onOpenEmpleadoView" text="Gestionar Empleados" />
+
+
+    <Button fx:id="btnConsultaSaldo" layoutX="90.0" layoutY="175.0" onAction="#abrirConsultaSaldo" text="Consultar Saldo" />
+
+    <TextArea layoutX="53.0" layoutY="14.0" prefHeight="38.0" prefWidth="182.0" text="BIENVENIDOS AL BANCO UQ" />
+</AnchorPane>

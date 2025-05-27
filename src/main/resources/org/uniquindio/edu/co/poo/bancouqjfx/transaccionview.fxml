@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500" prefWidth="400" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.uniquindio.edu.co.poo.bancouqjfx.viewController.TransaccionController">
+
+    <!-- Cuenta Origen -->
+    <TextField fx:id="txtCuentaOrigen" layoutX="50" layoutY="30" promptText="Cuenta Origen" />
+    <ComboBox fx:id="cmbTipoCuentaOrigen" layoutX="220" layoutY="30" prefWidth="130" promptText="Tipo Origen" />
+
+    <!-- Cuenta Destino -->
+    <TextField fx:id="txtCuentaDestino" layoutX="50" layoutY="68" promptText="Cuenta Destino" />
+    <ComboBox fx:id="cmbTipoCuentaDestino" layoutX="220" layoutY="68" prefWidth="130" promptText="Tipo Destino" />
+
+    <!-- Monto -->
+    <TextField fx:id="txtMonto" layoutX="50" layoutY="110" promptText="Monto" />
+
+    <!-- Botones -->
+    <Button fx:id="btnTransferir" layoutX="50.0" layoutY="189.0" onAction="#realizarTransaccion" text="Transferir" />
+    <Button fx:id="btnEliminar" layoutX="125.0" layoutY="189.0" onAction="#eliminarTransaccion" text="Eliminar" />
+    <Button fx:id="btnActualizar" layoutX="193.0" layoutY="189.0" onAction="#actualizarTransaccion" text="Actualizar" />
+
+
+    <!-- Resultado -->
+    <Label fx:id="lblResultado" layoutX="53.0" layoutY="224.0" text="Resultado..." />
+
+    <!-- Historial -->
+    <TextArea fx:id="areaHistorial" layoutX="50.0" layoutY="250.0" prefHeight="220" prefWidth="300" />
+    <Label fx:id="lblExtraInfo" layoutX="50.0" layoutY="150.0" prefWidth="250" wrapText="true" />
+    <Button fx:id="btnVolver" layoutX="150.0" layoutY="223.0" mnemonicParsing="false" onAction="#volver" text="Volver" />
+</AnchorPane>

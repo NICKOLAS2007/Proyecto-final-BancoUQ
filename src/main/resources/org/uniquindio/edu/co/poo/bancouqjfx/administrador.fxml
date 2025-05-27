@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" prefHeight="314.0" prefWidth="450.0" spacing="10" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.uniquindio.edu.co.poo.bancouqjfx.viewController.AdministradorMainController">
+
+    <!-- Padding corregido con objeto Insets -->
+    <padding>
+        <Insets bottom="10" left="10" right="10" top="10" />
+    </padding>
+
+    <Label style="-fx-font-size: 18px;" text="Panel Admin" />
+
+    <HBox spacing="10">
+        <Button onAction="#onOpenCrudClientes" text="Registrar Cliente" />
+        <Button onAction="#onOpenEmpleadoView" text="Gestionar Empleados" />
+        <Button onAction="#onOpenTransacciones" text="Monitorear Transacciones" />
+    </HBox>
+
+    <AnchorPane fx:id="panelContenido" prefHeight="400" prefWidth="600" />
+
+</VBox>
