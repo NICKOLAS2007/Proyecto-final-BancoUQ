@@ -2,15 +2,17 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400" prefWidth="600" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="org.uniquindio.edu.co.poo.bancouqjfx.viewController.EmpleadoController">
+<AnchorPane prefHeight="408.0" prefWidth="607.0" style="-fx-background-color: #1a1f19;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.uniquindio.edu.co.poo.bancouqjfx.viewController.EmpleadoController">
 
-    <VBox layoutX="20" layoutY="20" spacing="10">
+    <VBox layoutX="54.0" layoutY="54.0" prefHeight="313.0" prefWidth="489.0" spacing="10">
         <padding>
             <Insets bottom="20" left="20" right="20" top="20" />
         </padding>
@@ -22,13 +24,31 @@
         </HBox>
 
         <HBox spacing="10">
-            <Button onAction="#registrarEmpleado" text="Registrar" />
-            <Button onAction="#modificarEmpleado" text="Modificar" />
-            <Button onAction="#eliminarEmpleado" text="Eliminar" />
-         <Button fx:id="btnVolver" mnemonicParsing="false" onAction="#volver" text="Volver" />
+            <Button onAction="#registrarEmpleado" style="-fx-background-color: #365046;" text="Registrar" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Button>
+            <Button onAction="#modificarEmpleado" style="-fx-background-color: #365046;" text="Modificar" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Button>
+            <Button onAction="#eliminarEmpleado" style="-fx-background-color: #365046;" text="Eliminar" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Button>
+         <Button fx:id="btnVolver" mnemonicParsing="false" onAction="#volver" style="-fx-background-color: #365046;" text="Volver" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Button>
         </HBox>
 
-        <ListView fx:id="listaEmpleados" prefHeight="250" />
+           <ListView fx:id="listaEmpleados" prefHeight="237.0" prefWidth="468.0" style="-fx-background-color: #9dddc7;" />
     </VBox>
+   <Label layoutX="196.0" layoutY="14.0" text="GESTIÓN DE EMPLEADOS" textFill="#39b888">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Label>
+   <AnchorPane layoutX="23.0" layoutY="42.0" prefHeight="8.0" prefWidth="562.0" style="-fx-background-color: #39b888;" />
 
 </AnchorPane>

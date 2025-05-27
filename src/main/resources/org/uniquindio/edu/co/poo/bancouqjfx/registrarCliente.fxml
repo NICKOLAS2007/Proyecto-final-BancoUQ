@@ -1,20 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="org.uniquindio.edu.co.poo.bancouqjfx.viewController.RegistroClienteController"
-            prefWidth="400" prefHeight="250">
+<AnchorPane prefHeight="240.0" prefWidth="400" style="-fx-background-color: #1a1f19;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.uniquindio.edu.co.poo.bancouqjfx.viewController.RegistroClienteController">
     <children>
-        <Label layoutX="130" layoutY="20" text="Registro Cliente" style="-fx-font-size: 18px;" />
 
-        <Label layoutX="40" layoutY="70" text="Correo:" />
+        <Label layoutX="40" layoutY="70" text="Correo:" textFill="#39b888">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
         <TextField fx:id="txtCorreo" layoutX="130" layoutY="65" prefWidth="220" />
 
-        <Label layoutX="40" layoutY="110" text="Contraseña:" />
-        <PasswordField fx:id="txtContrasena" layoutX="130" layoutY="105" prefWidth="220" />
+        <Label layoutX="40" layoutY="110" text="Contraseña:" textFill="#39b888">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+        <PasswordField fx:id="txtContrasena" layoutX="130.0" layoutY="105.0" prefWidth="220" />
 
-        <Button text="Registrar" layoutX="150" layoutY="160" prefWidth="100" onAction="#registrarCliente" />
+        <Button layoutX="130.0" layoutY="145.0" onAction="#registrarCliente" prefWidth="100" style="-fx-background-color: #39b888;" text="Registrarse">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label layoutX="128.0" layoutY="14.0" text="REGISTRARSE" textFill="#39b888">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Pane layoutY="249.0" prefHeight="17.0" prefWidth="400.0" style="-fx-background-color: #39b888;" />
     </children>
 </AnchorPane>

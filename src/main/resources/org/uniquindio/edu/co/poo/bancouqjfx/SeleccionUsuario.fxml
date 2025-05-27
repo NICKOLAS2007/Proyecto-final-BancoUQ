@@ -1,26 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="org.uniquindio.edu.co.poo.bancouqjfx.viewController.SeleccionUsuarioController"
-            prefWidth="400" prefHeight="300">
+<AnchorPane prefHeight="445.0" prefWidth="391.0" style="-fx-background-color: #39b888;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.uniquindio.edu.co.poo.bancouqjfx.viewController.SeleccionUsuarioController">
 
     <children>
-        <Label layoutX="140" layoutY="20" text="Iniciar Sesión" style="-fx-font-size: 20px;"/>
+      <BorderPane layoutY="48.0" prefHeight="397.0" prefWidth="391.0" style="-fx-background-color: #1a1f19;">
+         <top>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutX="29.0" layoutY="7.0" prefHeight="50.0" prefWidth="333.0">
+                     <children>
+                        <Label layoutX="90.0" layoutY="10.0" prefHeight="24.0" prefWidth="154.0" text="INICIAR SESIÓN" textAlignment="CENTER" textFill="#39b888">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <Pane prefHeight="17.0" prefWidth="387.0" style="-fx-background-color: #39b888;" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
 
-        <Label layoutX="40" layoutY="70" text="Tipo de Usuario:"/>
-        <ComboBox fx:id="comboTipoUsuario" layoutX="150" layoutY="65" prefWidth="200"/>
+        <Label layoutX="36.0" layoutY="122.0" text="Tipo de Usuario:" textFill="#39b888">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+        <ComboBox fx:id="comboTipoUsuario" layoutX="148.0" layoutY="118.0" prefWidth="200" style="-fx-background-color: #9dddc7;" />
 
-        <Label layoutX="40" layoutY="110" text="Correo:"/>
-        <TextField fx:id="txtCorreo" layoutX="150" layoutY="105" prefWidth="200"/>
+        <Label layoutX="59.0" layoutY="162.0" text="Correo:" textFill="#39b888">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+        <TextField fx:id="txtCorreo" layoutX="148.0" layoutY="158.0" prefWidth="200">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
 
-        <Label layoutX="40" layoutY="150" text="Contraseña:"/>
-        <PasswordField fx:id="txtContrasena" layoutX="150" layoutY="145" prefWidth="200"/>
+        <Label layoutX="48.0" layoutY="201.0" text="Contraseña:" textFill="#39b888">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+        <PasswordField fx:id="txtContrasena" layoutX="148.0" layoutY="197.0" prefWidth="200" />
 
-        <Button fx:id="btnIngresar" layoutX="150" layoutY="190" text="Ingresar" onAction="#ingresar" prefWidth="90"/>
-        <Button fx:id="btnRegistrar" layoutX="260" layoutY="190" text="Registrarse" onAction="#registrar" prefWidth="90"/>
+        <Button fx:id="btnIngresar" layoutX="148.0" layoutY="278.0" onAction="#ingresar" prefWidth="90" style="-fx-background-color: #39b888;" text="Ingresar">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font></Button>
+        <Button fx:id="btnRegistrar" layoutX="251.0" layoutY="278.0" onAction="#registrar" prefHeight="25.0" prefWidth="90" style="-fx-background-color: #39b888;" text="Registrarse">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label layoutX="130.0" layoutY="9.0" prefHeight="31.0" prefWidth="132.0" text=" BANCO UQ" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
 
     </children>
 

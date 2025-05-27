@@ -1,24 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<VBox alignment="TOP_CENTER" prefHeight="314.0" prefWidth="450.0" spacing="10" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.uniquindio.edu.co.poo.bancouqjfx.viewController.AdministradorMainController">
+<VBox alignment="TOP_CENTER" prefHeight="220.0" prefWidth="450.0" spacing="10" style="-fx-background-color: #1a1f19;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.uniquindio.edu.co.poo.bancouqjfx.viewController.AdministradorMainController">
 
     <!-- Padding corregido con objeto Insets -->
     <padding>
         <Insets bottom="10" left="10" right="10" top="10" />
     </padding>
 
-    <Label style="-fx-font-size: 18px;" text="Panel Admin" />
+    <HBox spacing="10" />
 
-    <HBox spacing="10">
-        <Button onAction="#onOpenCrudClientes" text="Registrar Cliente" />
-        <Button onAction="#onOpenEmpleadoView" text="Gestionar Empleados" />
-        <Button onAction="#onOpenTransacciones" text="Monitorear Transacciones" />
-    </HBox>
-
-    <AnchorPane fx:id="panelContenido" prefHeight="400" prefWidth="600" />
+    <AnchorPane fx:id="panelContenido" prefHeight="70.0" prefWidth="288.0">
+      <children>
+         <AnchorPane layoutX="-2.0" layoutY="-16.0" prefHeight="193.0" prefWidth="430.0">
+            <children>
+                 <Button layoutX="138.0" layoutY="130.0" onAction="#onOpenTransacciones" style="-fx-background-color: #365046;" text="Monitorear Transacciones" textFill="WHITE">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Button>
+                 <Button layoutX="138.0" layoutY="62.0" onAction="#onOpenCrudClientes" prefHeight="25.0" prefWidth="162.0" style="-fx-background-color: #365046;" text="Registrar Cliente" textFill="#fff9f9">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Button>
+                 <Button layoutX="137.0" layoutY="97.0" onAction="#onOpenEmpleadoView" prefHeight="25.0" prefWidth="162.0" style="-fx-background-color: #365046;" text="Gestionar Empleados" textFill="WHITE">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Button>
+               <Label layoutX="93.0" text="SISTEMA DE ADMINISTRACIÓN" textFill="#39b888">
+                  <font>
+                     <Font name="System Bold" size="18.0" />
+                  </font>
+               </Label>
+               <AnchorPane layoutX="19.0" layoutY="193.0" prefHeight="4.0" prefWidth="389.0" style="-fx-background-color: #39b888;" />
+               <AnchorPane layoutX="19.0" layoutY="39.0" prefHeight="4.0" prefWidth="389.0" style="-fx-background-color: #39b888;" />
+            </children>
+         </AnchorPane>
+      </children></AnchorPane>
 
 </VBox>

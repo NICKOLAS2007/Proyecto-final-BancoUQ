@@ -2,7 +2,7 @@ package org.uniquindio.edu.co.poo.bancouqjfx.model;
 import java.util.Collection;
 import java.util.LinkedList;
 
-// Codificación realizada por: Nicolás Ramirez Celis, Samuel Cruz Pabón, Nicolás Monsalve Aguirre
+// Codificación realizada por: Nicolás Ramirez Celis, Samuel Cruz Pabón, Nicolás Monsalve Aguirre :)
 
 
 public class Administrador extends Persona {
